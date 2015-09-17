@@ -10,10 +10,14 @@ public class SelectionSort {
                 }
             }
             if (minIndex != i) {
-                Integer temp = array[i];
-                array[i] = array[minIndex];
-                array[minIndex] = temp;
+                swap(array, i, minIndex);
             }
         }
+    }
+
+    private static void swap(Integer[] array, int a, int b) {
+        Integer temp = array[a];
+        array[a] = array[b];
+        array[b] = temp;
     }
 }
