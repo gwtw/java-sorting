@@ -1,4 +1,4 @@
-[![Growing with the Web](http://www.growingwiththeweb.com/images/site/logo.png)][1]
+# java-sorting
 
 [![Build Status](http://img.shields.io/travis/GrowingWithTheWeb/java-sorting.svg?style=flat)](http://travis-ci.org/GrowingWithTheWeb/java-sorting)
 
