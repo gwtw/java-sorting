@@ -28,4 +28,10 @@ gradle test
 
 
 
+## See also
+
+- [Complexity table for sorting algorithms](https://github.com/Tyriar/js-sorting/blob/master/lib/README.md)
+
+
+
 [1]: http://www.growingwiththeweb.com
