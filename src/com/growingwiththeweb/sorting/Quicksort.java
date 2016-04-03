@@ -7,9 +7,8 @@ public class Quicksort {
         sort(array, 0, array.length - 1);
     }
 
-    private static <T extends Comparable<T>> void sort(T[] array,
-                                                       int left,
-                                                       int right) {
+    private static <T extends Comparable<T>> void sort(
+            T[] array, int left, int right) {
         if (left < right) {
             int pivot = partition(array, left, right);
             sort(array, left, pivot - 1);
@@ -17,9 +16,8 @@ public class Quicksort {
         }
     }
 
-    private static <T extends Comparable<T>> int partition(T[] array,
-                                                           int left,
-                                                           int right) {
+    private static <T extends Comparable<T>> int partition(
+            T[] array, int left, int right) {
         T pivot = array[right];
         int mid = left;
         for (int i = mid; i < right; i++) {
@@ -31,13 +29,12 @@ public class Quicksort {
         return mid;
     }
 
-    private static <T extends Comparable<T>> void swap(T[] array,
-                                                       int i1,
-                                                       int i2) {
-        if (i1 != i2) {
-            T temp = array[i1];
-            array[i1] = array[i2];
-            array[i2] = temp;
+    private static <T extends Comparable<T>> void swap(
+            T[] array, int a, int b) {
+        if (a != b) {
+            T temp = array[a];
+            array[a] = array[b];
+            array[b] = temp;
         }
     }
 
@@ -51,9 +48,8 @@ public class Quicksort {
         randomSort(array, 0, array.length - 1);
     }
 
-    private static <T extends Comparable<T>> void randomSort(T[] array,
-                                                            int left,
-                                                            int right) {
+    private static <T extends Comparable<T>> void randomSort(
+            T[] array, int left, int right) {
         if (left < right) {
             int pivot = randomPartition(array, left, right);
             randomSort(array, left, pivot - 1);
@@ -61,9 +57,8 @@ public class Quicksort {
         }
     }
 
-    private static <T extends Comparable<T>> int randomPartition(T[] array,
-                                                                 int left,
-                                                                 int right) {
+    private static <T extends Comparable<T>> int randomPartition(
+            T[] array, int left, int right) {
         int pivot = left + random.nextInt(right - left);
         swap(array, right, pivot);
         return partition(array, left, right);

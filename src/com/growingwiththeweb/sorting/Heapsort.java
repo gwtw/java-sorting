@@ -11,12 +11,15 @@ public class Heapsort {
         }
     }
 
-    private static <T extends Comparable<T>> void buildHeap(T[] array, int heapSize) {
-        for (int i = (int)(array.length / 2); i >= 0; i--)
+    private static <T extends Comparable<T>> void buildHeap(
+            T[] array, int heapSize) {
+        for (int i = (int)(array.length / 2); i >= 0; i--) {
             heapify(array, heapSize, i);
+        }
     }
 
-    private static <T extends Comparable<T>> void heapify(T[] array, int heapSize, int i) {
+    private static <T extends Comparable<T>> void heapify(
+            T[] array, int heapSize, int i) {
         int left = i * 2 + 1;
         int right = i * 2 + 2;
         int largest;
@@ -32,9 +35,10 @@ public class Heapsort {
         }
     }
 
-    private static <T extends Comparable<T>> void swap(T[] array, int i1, int i2) {
-        T temp = array[i1];
-        array[i1] = array[i2];
-        array[i2] = temp;
+    private static <T extends Comparable<T>> void swap(
+            T[] array, int a, int b) {
+        T temp = array[a];
+        array[a] = array[b];
+        array[b] = temp;
     }
 }
