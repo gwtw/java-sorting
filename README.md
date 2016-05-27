@@ -1,6 +1,6 @@
 # java-sorting
 
-[![Build Status](http://img.shields.io/travis/Tyriar/java-sorting.svg?style=flat)](http://travis-ci.org/Tyriar/java-sorting)
+[![Build Status](http://img.shields.io/travis/GrowingWithTheWeb/java-sorting.svg?style=flat)](http://travis-ci.org/GrowingWithTheWeb/java-sorting)
 
 A collection of sorting algorithms written in Java for [Growing with the Web][1].
 
@@ -30,7 +30,7 @@ gradle test
 
 ## See also
 
-- [Complexity table for sorting algorithms](https://github.com/Tyriar/js-sorting/blob/master/lib/README.md)
+- [Complexity table for sorting algorithms](https://github.com/GrowingWithTheWeb/js-sorting/blob/master/lib/README.md)
 
 
 
