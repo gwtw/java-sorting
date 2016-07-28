@@ -1,6 +1,6 @@
 # java-sorting
 
-[![Build Status](http://img.shields.io/travis/gwtw/java-sorting.svg?style=flat)](http://travis-ci.org/gwtw/java-sorting)
+[![Build Status](https://travis-ci.org/gwtw/java-sorting.svg?branch=master)](https://travis-ci.org/gwtw/java-sorting)
 
 A collection of sorting algorithms written in Java for [Growing with the Web][1].
 
