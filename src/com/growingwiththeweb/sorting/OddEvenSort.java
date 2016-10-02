@@ -5,7 +5,7 @@ public class OddEvenSort {
         boolean sorted = false;
         while (!sorted) {
             sorted = innerSort(array, 1);
-            sorted = sorted && innerSort(array, 0);
+            sorted = innerSort(array, 0) && sorted;
         }
     }
 
